@@ -1,0 +1,22 @@
+// Global
+@import './Global/global.scss';
+
+// Components
+
+@import './components/carrousel.scss';
+@import './components/characteristic.scss';
+@import './components/hotel-listing.scss';
+@import './components/link-back-icon.scss';
+@import './components/navbar.scss';
+@import './components/room-listing.scss';
+@import './components/update-form.scss';
+@import './components/user-listing.scss';
+@import './components/reservation-cards';
+
+// Pages
+@import './pages/admin-center.scss';
+@import './pages/hotel-page.scss';
+@import './pages/home-page.scss';
+@import './pages/login.scss';
+@import './pages/profile.scss';
+@import './pages/register.scss';

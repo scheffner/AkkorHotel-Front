@@ -1,0 +1,91 @@
+.hotel-page-container {
+  width: 65%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  a {
+    width: 10%;
+  }
+
+  &__infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+
+    &__heading {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__bottom-section {
+    display: flex;
+    min-width: 100%;
+    align-items: baseline;
+
+    &__description {
+      text-align: justify;
+      width: 80%;
+      margin-right: 2rem;
+    }
+
+    &__rooms {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+    }
+  }
+}
+
+.slide-out-div {
+  position: fixed;
+  top: 0;
+  right: -20rem;
+  width: 20rem;
+  height: 100%;
+  background-color: white;
+  transition: right 0.5s ease;
+  z-index: 1000;
+  border-left: 1px solid black;
+
+  &__infos {
+    margin: 2rem;
+
+    input {
+      background-color: transparent;
+      border: 1px solid black;
+      border-radius: 12px;
+      margin: 0 1rem;
+    }
+
+    &__rooms {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      padding: 0 1rem;
+
+      select {
+        background-color: transparent;
+        border: 1px solid black;
+        border-radius: 12px;
+      }
+    }
+
+    &__actions {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+}
+
+.slide-out-div.visible {
+  right: 0;
+}

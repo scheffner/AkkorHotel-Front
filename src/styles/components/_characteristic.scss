@@ -1,0 +1,19 @@
+.characteristic-container {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 100%;
+  height: auto;
+
+  &__item {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    justify-content: left;
+    gap: 1rem;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 0 1rem;
+  }
+}

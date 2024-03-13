@@ -1,0 +1,85 @@
+.admindashboard-container {
+  display: flex;
+  min-height: 100vh;
+  margin: 0;
+  flex-direction: column;
+
+  &__back {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    justify-content: left;
+  }
+
+  h1 {
+    margin-left: 2rem;
+  }
+
+  &__filters {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    margin: 0 2rem;
+    align-items: center;
+    justify-content: left;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+    span {
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      width: 6rem;
+      height: 2rem;
+      text-align: center;
+      justify-content: center;
+    }
+
+    .active {
+      color: white;
+      background-color: #ff5e6c;
+    }
+  }
+  &__results {
+    width: 100vh;
+    display: flex;
+    border-top: 2px solid black;
+    position: relative;
+  }
+}
+
+.modify-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.images-input {
+  background-color: white;
+}
+
+.uploaded-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 10px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.image-container {
+  position: relative;
+
+  &__delete {
+    background-color: transparent;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

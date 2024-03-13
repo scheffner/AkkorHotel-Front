@@ -1,0 +1,28 @@
+.reservation-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+
+  &__card {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 50%;
+    border-radius: 12px;
+    padding: 1rem 0rem;
+
+    &__dates {
+      display: flex;
+      gap: 1rem;
+    }
+
+    &__rooms {
+      display: flex;
+      gap: 1rem;
+    }
+  }
+}

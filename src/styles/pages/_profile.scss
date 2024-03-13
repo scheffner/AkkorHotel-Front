@@ -1,0 +1,38 @@
+.profile-page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0 5rem;
+  position: relative;
+
+  a {
+    margin: 0;
+  }
+
+  &__user {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+
+    input {
+      outline-color: #ff5e6c;
+      background: transparent;
+      border-color: transparent;
+      border-bottom: 1px solid darkgrey;
+      margin: 0;
+    }
+
+    &__heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 3rem auto;
+  }
+}
